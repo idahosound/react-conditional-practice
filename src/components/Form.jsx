@@ -5,8 +5,8 @@ function Form(props) {
     <form className="form">
       <input type="text" placeholder="Username" />
       <input type="password" placeholder="Password" />
-      {userIsRegistered === false && (<input type="password" placeholder="Confirm Password" />)}
-      <button type="submit"> {userIsRegistered ? "Login" : "Register"} </button>
+      {!props.userIsRegistered && (<input type="password" placeholder="Confirm Password" />)}
+      <button type="submit"> {props.userIsRegistered ? "Login" : "Register"} </button>
     </form>
   );
 }
