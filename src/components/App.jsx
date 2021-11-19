@@ -1,12 +1,15 @@
 import React from "react";
 import Form from "./Form";
+var btnText = "";
 
-var userIsRegistered = false;
+var userIsRegistered = true;
+
+userIsRegistered ? btnText = "Login" : btnText = "Register";
 
 function App() {
   return (
     <div className="container">
-      <Form />
+      <Form label = {btnText}/>
     </div>
   );
 }
