@@ -9,7 +9,7 @@ userIsRegistered ? btnText = "Login" : btnText = "Register";
 function App() {
   return (
     <div className="container">
-      <Form label = {btnText}/>
+      <Form label = {btnText} userIsRegistered = {userIsRegistered} />
     </div>
   );
 }
