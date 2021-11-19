@@ -4,12 +4,10 @@ var btnText = "";
 
 var userIsRegistered = true;
 
-userIsRegistered ? btnText = "Login" : btnText = "Register";
-
 function App() {
   return (
     <div className="container">
-      <Form label = {btnText} userIsRegistered = {userIsRegistered} />
+      <Form />
     </div>
   );
 }
